@@ -1,13 +1,14 @@
-//created array of strings and assigned it to colors..colors is now array
-var colors = ['red', 'blue', 'green'];
+//Create an array of nunbers
+var numbers = [1,2,3,4,5];
 
-//old way //for loop
-for (var i= 0; i < colors.length; i++) {
-    console.log(colors[i]);
+//Create a variable to hold the sum
+var sum=0;
+
+function adder(number){
+    sum+=number;
 }
+//Loop over the array, incrementing the sum variable
+numbers.forEach(adder);
 
-//works sameway as for loop
-//forEach helper method..passed annonymous function
-colors.forEach(function(color){//iterator function takes each element from array colors
-    console.log(color);
-});
+//print the sum variable
+sum;
